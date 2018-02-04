@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.row-eq-height {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.description {
+  font-size: 3vw;
+  min-height: 1em;
+}
+
+.piece-wrapper .piece {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0.5vw;
+}
+
+.piece {
+  border: solid transparent;
+  box-sizing: border-box;
+  border-radius: 0.5vw;
+}
+
+.board-wrapper .piece {
+  position: absolute;
+  bottom: 0;
+
+}
+
+.strong {
+  animation: BlinkBorder 1s infinite;
+}
+
+@keyframes BlinkBorder {
+  50%{
+    border-color: orange;
+  }
+}
